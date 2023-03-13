@@ -17,9 +17,9 @@ build:
 
 requirements:
   host:
-    - ruby >=2.7,<2.8
+    - ruby >=2.7,<3
   run:
-    - ruby >=2.7,<2.8
+    - ruby >=2.7,<3
 test:
   commands:
     - ruby -r {{ name }} -e 'exit 0'
