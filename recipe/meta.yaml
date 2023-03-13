@@ -10,7 +10,7 @@ source:
     sha256: 312c8fe13700db86ac9d05ea997af3db03abdf50c65b1801d775bc7a695f185d
 
 build:
-  noarch: general
+  noarch: generic
   number: 1
   script:
     - gem install -N -l -V --norc --ignore-dependencies {{ name }}-{{ version }}.gem
