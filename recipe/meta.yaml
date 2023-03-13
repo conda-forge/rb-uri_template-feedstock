@@ -10,17 +10,16 @@ source:
     sha256: 312c8fe13700db86ac9d05ea997af3db03abdf50c65b1801d775bc7a695f185d
 
 build:
-  number: 0
+  noarch: generic
+  number: 1
   script:
     - gem install -N -l -V --norc --ignore-dependencies {{ name }}-{{ version }}.gem
-  skip: true  # [win]
 
 requirements:
   host:
-    - ruby >=2.5,<2.6
+    - ruby >=2.7,<3
   run:
-    - ruby >=2.5,<2.6
-
+    - ruby >=2.7,<3
 test:
   commands:
     - ruby -r {{ name }} -e 'exit 0'
